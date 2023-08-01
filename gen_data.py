@@ -18,7 +18,7 @@ class DataGen:
                                         n_features=2,
                                         centers=2,
                                         random_state=42,
-                                        cluster_std=1.4)
+                                        cluster_std=1.7)
 
         elif self.dtype == 'circles':
             self.X, self.y = make_circles(n_samples=500,
@@ -27,7 +27,7 @@ class DataGen:
                                           random_state=42)
 
         elif self.dtype == 'moons':
-            self.X, self.y = make_moons(n_samples=100,
+            self.X, self.y = make_moons(n_samples=500,
                                         noise=0.1,
                                         random_state=42)
 
