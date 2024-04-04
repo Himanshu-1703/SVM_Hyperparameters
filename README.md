@@ -61,7 +61,7 @@ The user can select different values of Hyperparameter `C` that is also the inve
 ## Visualizations for Non-Linear Data
 
 The optimization function of SVM is:
-$$ \text{maximize} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n \alpha_i \alpha_j y_i y_j K(X_i,X_j)$$
+$$\text{maximize} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n \sum_{j=1}^n \alpha_i \alpha_j y_i y_j K(X_i,X_j)$$
 where $K(X_i,X_j)$ is the kernel function.
 
 ### Kernel is Polynomial
@@ -81,12 +81,12 @@ RBF (Radial Basis Function) kernel is also sometimes called as **universal funct
 
 The HyperParameter used here is `gamma`.
 
-$$ \text{rbf} = \large{e^{-\frac{||X_i - X_j||^2}{2\sigma^2}}}$$
+$$\text{rbf} = \large{e^{-\frac{||X_i - X_j||^2}{2\sigma^2}}}$$
 or
-$$ \large{\text{rbf}} = e^{-\gamma||X_i - X_j||^2}$$
+$$\large{\text{rbf}} = e^{-\gamma||X_i - X_j||^2}$$
 where $\gamma = \frac{1}{2\sigma^2}$
 
-**`gamma` is inverse of regularization.
+**`gamma` is inverse of regularization.**
 
 1. Higher values of `gamma` means that the model will form local boundaries and will stick to the pattern of individual data points leading to the formation of complex decision boundaries resulting in model overfitting.
 2. Lower values of `gamma` means that the model will form smooth local decisions leading to more generalized decision boundaries reducing the variance of the model with some tradeoff of the Bias of the model.
@@ -95,6 +95,6 @@ where $\gamma = \frac{1}{2\sigma^2}$
 
 ![alt text](<screenshots/Gamma 2.png>)
 
-> **Note- The App also provides an option through the radio button to switch between `matplotlib` plots that are custom built or can switch to `mlxtend` to plot decision boubndaries of the model.
+> **Note- The App also provides an option through the radio button to switch between `matplotlib` plots that are custom built or can switch to `mlxtend` to plot decision boundaries of the model.**
 
 ![alt text](<screenshots/custom type.png>)
